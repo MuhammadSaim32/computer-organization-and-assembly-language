@@ -1,0 +1,32 @@
+
+General purpose register ka size sa hamara  machine ka artichature ki defination hoti ha ka wo 32 bit ka ha ya 64 bit ya what so ever.
+
+🧠 What Does 16-bit, 32-bit, or 64-bit System Mean?
+
+Bit System Meaning:
+A "bit system" (like 32-bit or 64-bit) tells us how much data the CPU can handle at once.
+
+This is based on the size of the CPU's general-purpose registers.
+
+📦 What Are Registers?
+Registers are very small and fast memory locations inside the CPU.
+
+A 32-bit register holds 32 bits (4 bytes), and a 64-bit register holds 64 bits (8 bytes).
+
+So when we say a system is 32-bit, we mean its CPU registers are 32 bits wide.
+
+📊 Why It Matters:
+Bigger registers can process larger data at once.
+
+Bigger register size also means the CPU can use more RAM:
+
+32-bit systems can handle up to ~4 GB of RAM.
+
+64-bit systems can handle more than 1 TB (in theory).
+
+🔄 Real-World Impact:
+16-bit systems are outdated and were used in early computers.
+
+32-bit systems were used in the 90s–2000s.
+
+64-bit systems are standard now in almost all modern PCs and phones.

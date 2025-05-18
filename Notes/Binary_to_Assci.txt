@@ -1,0 +1,19 @@
+ Why We Convert to ASCII for Printing
+
+Computers store all data (numbers, text, etc.) in binary.
+
+Screens/terminals only show characters like '0', 'A', '@' using ASCII or Unicode codes.
+
+To display a number (e.g. 452), it must be:
+
+Split into digits → 4, 5, 2
+
+Converted to ASCII → '4' = 0x34, '5' = 0x35, '2' = 0x32
+
+Sent to screen as character codes
+
+🔁 This process is the same in modern systems, but programming languages (like C, Python) handle the conversion for you automatically.
+
+🧠 Final Point:
+
+Binary values must be converted to ASCII/Unicode if you want to print them as readable text.

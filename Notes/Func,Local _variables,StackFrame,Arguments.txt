@@ -1,0 +1,78 @@
+🧠 Function Calls and Stack Frames in Assembly 
+✅ 1. What Is a Stack Frame?
+
+A stack frame is a block of memory created on the stack every time a function is called. It includes:
+
+Function arguments
+
+Return address
+
+Saved registers 
+
+Local variables
+
+Each new function call adds its own frame to the same stack, but uses new memory below the current stack pointer.
+
+🔄 No memory is reused — the stack grows downwards for each call.
+
+✅ 2. What Happens During a Function Call?
+🪛 Step-by-Step Breakdown:
+Before calling the function (done by the caller):
+
+
+PUSH arg2
+PUSH arg1
+CALL myFunction
+Arguments are pushed onto the stack.
+
+CALL pushes the return address and jumps to the function.
+
+When the function starts (sets up its working area):
+
+PUSH BP         ; Save the old base pointer (frame reference)
+MOV BP, SP      ; Mark current position to access args/locals
+SUB SP, N       ; Reserve space for local variables
+Inside the function, you can access:
+
+Arguments: [BP + 4], [BP + 6], etc.
+
+Local variables: [BP - 2], [BP - 4], etc.
+
+Before exiting the function (clean-up and return):
+
+MOV SP, BP      ; Free the local variable space
+POP BP          ; Restore previous frame reference
+RET N           ; Return to caller and optionally clean arguments
+✅ 3. Structure of One Function Call (Stack Frame)
+
+
+Higher Memory Addresses →
++----------------------+
+| Argument n           | ← [BP + 6] (e.g.)
+| Argument 1           | ← [BP + 4]
+| Return Address       |
+| Old BP (Saved)       | ← [BP]
+| Local Variable 1     | ← [BP - 2]
+| Local Variable 2     | ← [BP - 4]
++----------------------+
+↓ Lower Memory
+Each new function adds its own frame on top of the stack.
+
+✅ 4. Key Concepts Explained Simply
+Concept	Real-World Meaning
+Call Stack	Memory area where function calls are handled
+Stack Frame	One function’s data (args, locals, return info) in the stack
+BP (Base Pointer)	A fixed reference to help access variables in the current frame
+SP (Stack Pointer)	Points to the top of the current stack
+Setup Code	 Sets up memory when function starts
+Cleanup Code	 Clears memory and returns when done
+RET N	Returns from function and clears N bytes of arguments
+
+
+
+🔹 JMP (Jump) Instruction 
+
+Used to transfer program control to a different part of the code.
+
+It changes the Instruction Pointer (IP) to a new memory address.
+

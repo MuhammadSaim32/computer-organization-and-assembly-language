@@ -1,0 +1,39 @@
+___________________________________________________ByteCode???________________________________________________________________________
+
+
+Bytecode: An intermediate, low-level representation of a program, typically compiled from a high-level language (like Python or Java).
+
+Purpose: Bytecode is platform-independent and executed by a virtual machine (VM), which translates it into machine code for a specific platform.
+
+Bytecode is called so because its instructions (called opcodes) are usually 1 byte (8 bits) long.
+ These byte-sized opcodes, along with optional operands, form a consize, intermediate code that can be interpreted  by a virtual machine (VM).
+
+
+
+__________________________________________________________________Vm Notes________________________________________________________________
+
+💾 What Happens in DOSBox (Simplified)
+
+DOSBox is a virtual machine that pretends to be a 16-bit DOS system, so you can run old DOS programs on a modern 64-bit machine.
+
+⚙️ How It Works (Step-by-Step)
+
+Emulates Old Hardware
+DOSBox creates fake 16-bit CPU, memory, and I/O to run DOS programs.
+
+Translates 16-bit to 64-bit
+
+DOSBox converts old 16-bit instructions into modern 64-bit ones that your CPU understands.
+
+Runs Inside Linux
+
+Linux (64-bit OS) runs DOSBox like any app, and DOSBox handles all the conversion internally.
+
+🧠 What You See
+
+You see the DOS program running normally, like on an old PC.
+
+Behind the scenes, DOSBox is translating everything.
+
+It may run a bit slower due to this software emulation overhead.
+
