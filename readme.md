@@ -18,3 +18,7 @@ Some of the key topics I explored include:
 - 🔹 Stack memory, function frame layout, and parameter passing
 - 🔹 Writing to video memory and direct memory access in 16-bit
 - 🔹 Concepts like CISC vs RISC architecture, latency, and throughput
+
+## Instructor's YouTube Channel
+
+Course followed from: [Recluze – YouTube Channel](https://www.youtube.com/@recluze)
