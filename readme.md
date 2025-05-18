@@ -10,7 +10,7 @@ afd file.com                 # debuger
 
 Some of the key topics I explored include:
 
-- 🔹 Registers, Register Cache, and RAM structure
+- 🔹 Registers,Cache,and RAM structure
 - 🔹 Loops, functions, jumps, and labels in Assembly
 - 🔹 Segmented memory model 
 - 🔹 Extended multiplication, shifting, and bitwise operations
@@ -18,6 +18,8 @@ Some of the key topics I explored include:
 - 🔹 Stack memory, function frame layout, and parameter passing
 - 🔹 Writing to video memory and direct memory access in 16-bit
 - 🔹 Concepts like CISC vs RISC architecture, latency, and throughput
+- 🔹 Calling assembly functions from high-level languages like C
+- 🔹 Pipelining and how modern CPUs optimize instruction execution
 
 ## Instructor's YouTube Channel
 
