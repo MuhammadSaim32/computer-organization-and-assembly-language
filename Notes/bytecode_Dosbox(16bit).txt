@@ -14,7 +14,7 @@ __________________________________________________________________Vm Notes______
 
 💾 What Happens in DOSBox (Simplified)
 
-DOSBox is a virtual machine that pretends to be a 16-bit DOS system, so you can run old DOS programs on a modern 64-bit machine.
+DOSBox is a  Emulator that pretends to be a 16-bit DOS system, so you can run old DOS programs on a modern 64-bit machine.
 
 ⚙️ How It Works (Step-by-Step)
 
